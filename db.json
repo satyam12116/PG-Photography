@@ -1,0 +1,117 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "satyam kumar",
+      "email": "satyamkumar12116@gmail.com",
+      "gender": "male",
+      "phoneNo": 9128390469,
+      "password": "Satya"
+    },
+    {
+      "name": "raj",
+      "email": "raj@gmail.com",
+      "phoneNo": 8787676565,
+      "gender": "male",
+      "password": "raj",
+      "id": 2
+    },
+    {
+      "name": "raj",
+      "email": "raj@gmail.com",
+      "phoneNo": 8787676565,
+      "gender": "male",
+      "password": "raj",
+      "id": 3
+    },
+    {
+      "name": "raj",
+      "email": "raj@gmail.com",
+      "phoneNo": 8787676565,
+      "gender": "male",
+      "password": "raj",
+      "id": 4
+    },
+    {
+      "name": "ramit",
+      "email": "ramit@gmail.com",
+      "phoneNo": 7367676565,
+      "gender": "male",
+      "password": "ramit",
+      "id": 5
+    },
+    {
+      "name": "satyam kumar11",
+      "email": "satyamkuma11r12116@gmail.com",
+      "phoneNo": 9128390468,
+      "gender": "male",
+      "password": "saa",
+      "id": 6
+    },
+    {
+      "name": "satyam kumar",
+      "email": "satyamk2116@gmail.com",
+      "phoneNo": 9128390468,
+      "gender": "female",
+      "password": "saaa",
+      "id": 7
+    },
+    {
+      "name": "satyam kumar",
+      "email": "satar12116@gmail.com",
+      "phoneNo": 9128390468,
+      "gender": "male",
+      "password": "male",
+      "id": 8
+    },
+    {
+      "name": "satyam kumar",
+      "email": "satyamkumar12116@gmail.com",
+      "phoneNo": 9128390468,
+      "gender": "male",
+      "password": "female",
+      "id": 9
+    },
+    {
+      "name": "satyam kumar",
+      "email": "satyamkumar12116@gmail.com",
+      "phoneNo": 9128390468,
+      "gender": "aa",
+      "password": "aa",
+      "id": 10
+    }
+  ],
+  "contactus": [
+    {
+      "name": "satyam kumar",
+      "email": "satyamkumar12116@gmail.com",
+      "phoneNo": "09128390468",
+      "message": "dee",
+      "id": 1
+    }
+  ],
+  "project": [
+    {
+      "status": "rejected",
+      "name": "satyam kumar",
+      "email": "satyamkumar12116@gmail.com",
+      "phoneNo": 9128390468,
+      "eventDate": "2023-05-26",
+      "eventAddress": "laxmi pg begumpur",
+      "eventTime": "21:45",
+      "noOfDays": 3,
+      "id": 1
+    },
+    {
+      "status": "rejected",
+      "name": "satyam kumar",
+      "email": "satyamkumar12116@gmail.com",
+      "phoneNo": 9128390468,
+      "eventDate": "2023-05-16",
+      "eventAddress": "laxmi pg begumpur",
+      "eventTime": "20:29",
+      "noOfDays": 4,
+      "id": 2
+    }
+  ]
+}

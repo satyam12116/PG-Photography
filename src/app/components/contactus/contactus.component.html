@@ -1,0 +1,49 @@
+<!-- contact section -->
+
+<section class="contact_section layout_padding">
+    <div class="bg-img1">
+      <img src="/assets/images/bg-img-1.png" alt="">
+    </div>
+    <div class="bg-img2">
+      <img src="/assets/images/bg-img-2.png" alt="">
+    </div>
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Contact Us
+        </h2>
+      </div>
+      <div class="">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <form *ngIf="closeForm" [formGroup]="submitForm"(submit)="submitHandler()">
+              <div class="contact_form-container">
+                <div>
+                  <div>
+                    <input type="text" formControlName="name"  placeholder="Name">
+                  </div>
+                  <div>
+                    <input type="text" formControlName="phone" placeholder="Phone Number">
+                  </div>
+                  <div>
+                    <input type="email" formControlName="email"  placeholder="Email">
+                  </div>
+                  <div class="">
+                    <input type="text" formControlName="message"  placeholder="Message" class="message_input">
+                  </div>
+                  <div class=" d-flex justify-content-center ">
+                    <button type="submit">
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end contact section -->

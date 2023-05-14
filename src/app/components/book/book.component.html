@@ -1,0 +1,87 @@
+<div class="container">
+    <h2 class="text-center my-2 py-2">Book Photography</h2>
+
+
+    <div *ngIf="closeForm">
+      <form [formGroup]="projectForm"(submit)="submitHandler()"  class="needs-validation" novalidate>
+      
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="name" class="form-control" id="name" name="name" formControlName="name" placeholder="Enter Your Full Name"required [class.is-invalid]="name.invalid && (name.dirty || name.touched)">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
+            <div *ngIf="name.errors?.['required']">
+              This field is required.
+            </div>
+        </div>
+        </div>
+  
+        <div class="mb-3">
+          <label for="email" class="form-label">Email ID:</label>
+          <input type="email" class="form-control" id="email" name="email"  formControlName="email" placeholder="Enter Your Email Id" required [class.is-invalid]="name.invalid && (name.dirty || name.touched)">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
+            <div *ngIf="name.errors?.['required']">
+              This field is required.
+            </div>
+        </div>
+        </div>
+  
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number:</label>
+          <input type="number" class="form-control" id="phone" name="phone"  formControlName="phone"placeholder="Enter Your Phone Number" required [class.is-invalid]="name.invalid && (name.dirty || name.touched)">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="invalid-feedback">
+            <div *ngIf="name.errors?.['required']">
+              This field is required.
+            </div>
+        </div>
+        </div>
+  
+        <div class="mb-3">
+          <label for="eventDate" class="form-label">Date of Delivery</label>
+          <input type="date" class="form-control" id="eventDate"  formControlName="eventDate"name="eventDate"placeholder="Enter Date of Delivery"required [class.is-invalid]="eventDate.invalid && (eventDate.dirty || eventDate.touched)">
+          <div *ngIf="eventDate.invalid && (eventDate.dirty || eventDate.touched)" class="invalid-feedback">
+            <div *ngIf="eventDate.errors?.['required']">
+              This field is required.
+            </div>
+        </div>
+        </div>
+     
+        <div class="mb-3">
+          <label for="eventAddress" class="form-label">Event Address</label>
+           <input type="text" class="form-control" id="eventAddress"  formControlName="eventAddress"name="language"placeholder="Event Address" required [class.is-invalid]="eventAddress.invalid && (eventAddress.dirty || eventAddress.touched)">
+          <div *ngIf="eventAddress.invalid && (eventAddress.dirty || eventAddress.touched)" class="invalid-feedback">
+            <div *ngIf="eventAddress.errors?.['required']">
+              This field is required.
+            </div>
+        </div>
+        </div>
+  
+        <div class="mb-3">
+          <label for="eventTime" class="form-label">Time</label>
+          <input type="time" class="form-control"  formControlName="eventTime"id="eventTime" name="eventTime"placeholder=" Time" required [class.is-invalid]="eventTime.invalid && (eventTime.dirty || eventTime.touched)">
+          <div *ngIf="eventTime.invalid && (eventTime.dirty || eventTime.touched)" class="invalid-feedback">
+            <div *ngIf="eventTime.errors?.['required']">
+              This field is required.
+            </div>
+        </div>
+        </div>
+        
+  
+        <div class="mb-3">
+          <label for="noOfDays" class="form-label">Address</label>
+          <input type="number" class="form-control"  formControlName="noOfDays" id="noOfDays" name="noOfDays"placeholder="How Many Days Event Is" required [class.is-invalid]="noOfDays.invalid && (noOfDays.dirty || noOfDays.touched)">
+          <div *ngIf="noOfDays.invalid && (noOfDays.dirty || noOfDays.touched)" class="invalid-feedback">
+            <div *ngIf="noOfDays.errors?.['required']">
+              This field is required.
+            </div>
+        </div>
+        </div>
+        
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+          <label class="form-check-label" for="exampleCheck1">Remeber Me</label>
+        </div>
+        <button type="submit" (click)="validate()"class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+    
+  </div>

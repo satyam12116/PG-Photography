@@ -1,0 +1,27 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Date of Event</th>
+        <th>Event Address</th>
+        <th>Event Time</th>
+        <th>No of Days</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of filteredUsers">
+            <td>{{ item.name }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.phoneNo }}</td>
+            <td>{{ item.eventDate }}</td>
+            <td>{{ item.eventAddress }}</td>
+            <td>{{ item.eventTime }}</td>
+            <td>{{ item.noOfDays }}</td>
+            <td>{{ item.status }}</td>
+            
+          </tr>
+    </tbody>
+  </table>

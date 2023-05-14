@@ -1,0 +1,157 @@
+<div class="hero_area">
+  <!-- header section strats -->
+  <header class="header_section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-11 offset-lg-1">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">              
+              <span style="border:3px solid black; padding: 6px; color: black; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                PG Photography
+              </span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div [ngSwitch]="menuType" class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                <ul *ngSwitchCase="'default'" class="navbar-nav  ">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" routerLink="/">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/about"> About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/ourwork"> Our work </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/book">Book</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/contactus">Contact Us</a>
+                  </li>
+                  <div ngbDropdown class="nav-item">
+                    <span class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Login</span>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      <a>
+                        <button  routerLink="admin-auth"ngbDropdownItem>admin</button>
+                      </a>
+                      <a>
+                        <button  routerLink="user-auth" ngbDropdownItem>user</button>
+                      </a>
+                   
+                    </div>
+                  </div>
+                </ul>
+                <ul *ngSwitchCase="'admin'" class="navbar-nav  ">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/admin-dashboard">Dashboard</a>
+                 </li>
+                 <li  class="nav-item">
+                    <a class="nav-link" (click)="handler()" routerLink="user-auth">
+                       LOGOUT
+                     </a>
+                  
+                 </li>
+                </ul>
+                <ul *ngSwitchCase="'user'" class="navbar-nav  ">
+                 
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" routerLink="/">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/about"> About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/ourwork"> Our work </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/req">Request Status</a>
+                 </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/book">Book</a>
+                  </li>
+                  <div ngbDropdown class="nav-item">
+                    <span  class="nav-link"  id="dropdownBasic1" ngbDropdownToggle>My Account</span>
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                      
+                          <a class="nav-item"  routerLink="editprofile" >
+                             Edit Profile
+                           </a>
+                      <br>
+                     
+                       <a class="nav-item" (click)="handler()" routerLink="user-auth" >
+                          LogOut
+                        </a>
+                     
+                       
+                   
+                    </div>
+                  </div>
+                </ul>
+              </div>
+
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- end header section -->
+
+<router-outlet></router-outlet>
+
+<!--  footer -->
+<footer>
+  <div class="footer">
+     <div class="container">
+        <div class="row" style="justify-content: space-between;">
+           
+           <div class=" col-md-3 col-sm-6">
+              <h3>LET US HELP YOU </h3>
+              <p  class="variat pad_roght2">Contact us for about 
+                 our delivery if our delivery have any issue.
+              </p>
+           </div>
+           <div class="col-md-3 col-sm-6">
+              <h3>INFORMATION</h3>
+              <ul class="link_menu">
+                 <li><a href="#" routerLink="/">Home</a></li>
+                 <li><a href="#" routerLink="/about">About</a></li>
+                 <li><a href="#" routerLink="/ourwork">Our work</a></li>
+                 <li><a href="#" routerLink="/book">Book</a></li>
+                 <li><a href="#" routerLink="/contactus">Contact Us</a></li>
+              </ul>
+           </div>
+           <div class="col-md-3 col-sm-6">
+              <h3>OUR Design</h3>
+              <p  class="variat">We have 10+ years of 
+                 experience in this business. 
+                 We provide your damanding products 
+                 within 3-4 working days.
+              </p>
+           </div>
+           <div class="col-md-6 offset-md-6">
+              <form id="hkh" class="bottom_form">
+                 
+              </form>
+           </div>
+        </div>
+     </div>
+     <div class="copyright">
+        <div class="container">
+           <div class="row">
+              <div class="col-md-10 offset-md-1">
+                 <p>©2023 All Rights Reserved. Designed by <a href="#"> Prayag Gharat.</a></p>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</footer>
+<!-- end footer -->
